@@ -104,7 +104,7 @@ main .space {
   margin-bottom: 80px;
 }
 #mainvisual {
-  background-image: url(../img/mainvisual.jpg);
+  background-image: url(mainvisual.jpg);
   background-size: cover;
 }
 #mainvisual .sentences_box {
