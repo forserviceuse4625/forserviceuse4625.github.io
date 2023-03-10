@@ -1,0 +1,328 @@
+/* h2タグ用 */
+.section-title {
+  /* display: inline-block; */
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+}
+/* h3タグ用 */
+.content-title {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+/* 画面の最大幅を指定。共通で使用 */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  /* text-align: center; */
+}
+
+a {
+  color: white;
+}
+
+/*----------
+ヘッダー
+----------*/
+header {
+  position: fixed;
+  z-index: 3;
+}
+.header_bg {
+  background: #050505;
+  width: 100%;
+  height: 80px;
+  opacity: 0.8;
+}
+.header_contents {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_contents h1 {
+  line-height: 1px;
+  font-size: 28px;
+  margin: 0 0 0 40px;
+}
+.header_contents h1 a {
+  display: block;
+}
+.header_nav_lists {
+  display: flex;
+}
+.header_nav_lists li {
+  margin: 0 40px 0 0;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+.header_nav_lists li:hover {
+  opacity: 1.0;
+}
+.nav_link {
+  font-size: 18px;
+}
+#header .fa {                   /* インスタ・ツイッターのアイコン用 */
+  font-size: calc(18px * 1.5); /* サイズを他の文字の1.5倍にする */
+  line-height: 18px;                /* line-heightを他の文字と同じにする */
+  vertical-align: middle;        /* 高さを他の文字に合わせる */
+}
+
+.responsive_btn {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 0 40px 0 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+.menu_line {
+  background: #fafafa;
+  border-radius: 5px;
+  width: 100%;
+  height: 5px;
+  margin: 4px 0;
+}
+
+/*----------
+メインビジュアル
+----------*/
+main .space {
+  height: 80px;
+}
+#mainvisual {
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+#mainvisual {
+  background-image: url(../img/mainvisual.jpg);
+  background-size: cover;
+}
+#mainvisual .sentences_box {
+  padding: 180px 0 180px 0;
+}
+#mainvisual .sentences {
+  color: white;
+  font-size: 48px;
+  padding: 20px 0;
+  letter-spacing: 5px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/*----------
+About
+----------*/
+#about ul {
+  margin-bottom: 30px;
+}
+#about li:first-child {
+  margin-bottom: 30px;
+}
+#about p {
+  text-align: justify;
+}
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+#about .text {
+  text-align: left;
+}
+.content {
+  margin-top: 60px;
+}
+
+/*----------
+News
+----------*/
+#news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+#news dt {
+  box-sizing: border-box;
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#news dd {
+  box-sizing: border-box;
+
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+
+/*----------
+Contents
+----------*/
+
+
+/*----------
+Contact
+----------*/
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  box-sizing: border-box;
+  width: 15%;
+}
+#contact dd {
+  box-sizing: border-box;
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact button {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px;
+  border: solid 1px #24292e;
+}
+#contact button:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+
+/*----------
+フッター
+----------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/*----------
+スマホ対応
+----------*/
+@media screen and (max-width: 768px) {
+  /*----------
+  ヘッダー
+  ----------*/
+  .responsive_btn {
+    display: flex;
+  }
+  .header_bg {
+    position: relative;
+  }
+  .header_nav {
+    background: #323232;
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0 0 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: .5s;
+  }
+  .header_nav_lists {
+    display: block;
+    text-align: center;
+  }
+  .header_nav_lists li {
+    margin: 0 0 40px;
+    text-align: center;
+  }
+  .nav_link {
+    font-size: 20px;
+  }
+  .menu_active {
+    right: 0;
+  }
+
+  /*----------
+  メインビジュアル
+  ----------*/
+  main .space {
+    display: none;
+  }
+  #mainvisual .sentences_box {
+    padding-top: 80px;
+  }
+  #mainvisual .sentences_box h2 {
+    font-size: 30px;
+  }
+
+  /*----------
+  About
+  ----------*/
+  #about .content {
+    flex-direction: column;
+  }
+  #about img {
+    margin-right: 0;
+  }
+
+  /*----------
+  News
+  ----------*/
+  #news dl {
+    flex-direction: column;
+  }
+  #news dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #news dd {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /*----------
+  Contents
+  ----------*/
+
+  /*----------
+  Contact
+  ----------*/
+  #contact dl {
+    flex-direction: column;
+  }
+  #contact dt {
+    width: 100%;
+  }
+  #contact dd {
+    width: 100%;
+  }
+}
+
