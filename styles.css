@@ -242,7 +242,7 @@ Contact
     display: flex;
   }
   .header_bg {
-    position: relative;
+    position: fixed;
   }
   .header_nav {
     background: #323232;
