@@ -133,7 +133,7 @@ About
 #about p {
   text-align: justify;
 }
-#about p++ {
+#about p+p {
   color: red;
 }
 #about .content {
