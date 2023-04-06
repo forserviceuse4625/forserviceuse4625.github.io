@@ -133,6 +133,9 @@ About
 #about p {
   text-align: justify;
 }
+#about p++ {
+  color: red;
+}
 #about .content {
   display: flex;
   justify-content: center;
